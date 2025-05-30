@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Sticky Navigation</title>
+    <script src="bootstrap.js"></script>
+    <script>
+        // Wait for the DOM to load before accessing elements
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the video element by ID
+            let vid = document.getElementById("speech");
+            // Autoplay the video
+            vid.play();
+        });
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <h2 class="logo"><a href="/index.html"><span>Empower</span>EdTech</a></h2>
+        <ul>
+          <li><a href="#" class="current">Home</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="./login/loginform.html">Login</a></li>
+          <li><a href="./news/news.html" target="_self">News</a></li>
+          <li><a href="#">AI Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="container margin width">
+        <h1>Welcome To Our Website</h1>
+        <p>We Extend a hearty welcome to our esteemed website. To begin , we kindly request you to initiate the signin or log in process. Following this we have organized a serias of tests and memory-enhancing games designed to assess your concentration and cognitive abilities. A comprehensive evalution of your performance will be provided, along with a tailored study plan and schedule for your gradual improvement.</p>
+      </div>
+      <div id="speech">
+        <video width="500px" height="500px" autoplay>
+          <source src="video.mp4" type="video/mp4" />
+         </video>
+      </div>
+    </div>
+  <script src="bootstrap.js"></script>
+  </body>
+</html>

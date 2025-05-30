@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paragraph and MCQ Form</title>
+  <!-- <link rel="stylesheet" href="reading.css"> -->
+  <style>
+    /* Add some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f2029;
+    margin: 0;
+    padding: 0;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: none; /* Center-align the content */
+  background: #2a2b38;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(204, 204, 204, 0.3);
+}
+
+h3 {
+    color: #fff;
+}
+
+h4 {
+  color: #cac7c7;
+  margin-top: 20px;
+}
+
+.mcq-option {
+  color: #cac7c7;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+input[type="radio"] {
+  margin-right: 10%;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+button {
+ border: 3px solid #000;
+ background-color: #ffeba7;
+ color: #102770;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+button:hover {
+  background-color: #102770;
+  color: #ffeba7;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p><h3><b><i>
+      1.Global warming is a pressing environmental issue that has far-reaching consequences for our planet. One of the most concerning effects of global warming is the rise in average temperatures across the Earth's surface. This increase in temperature can lead to the melting of polar ice caps and glaciers, contributing to rising sea levels. Consequently, low-lying coastal regions face the threat of inundation, displacing millions of people and causing the loss of valuable coastal ecosystems. Furthermore, global warming can disrupt weather patterns, leading to more frequent and severe weather events such as hurricanes, droughts, and heatwaves. These changes have a profound impact on agriculture, water resources, and ecosystems, affecting both human livelihoods and biodiversity.
+    </i></b></h3></p><br><br>
+
+    <p class="question">
+     <h4> 1. What is one of the most concerning effects of global warming?</h4>
+    </p>
+
+    <div class="mcq-options">
+      <label class="mcq-option">
+       a) Decreased frequency of hurricanes <input type="radio" name="answer" value="a"> <br><br>
+      </label>
+      <label class="mcq-option">
+       b) Increased polar bear populations <input type="radio" name="answer" value="b"><br><br>
+      </label>
+      <label class="mcq-option">
+       c) Rising sea levels <input type="radio" name="answer" value="c"> <br><br>
+      </label>
+      <label class="mcq-option">
+       d) Enhanced agricultural productivity <input type="radio" name="answer" value="d"> <br><br>
+      </label>
+    </div>
+
+   <center> <button onclick="submitForm()">Submit</button></center>
+  </div>
+
+  <script>
+    function submitForm() {
+      const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+
+      if (selectedAnswer) {
+        alert(`You selected: ${selectedAnswer.value}`);
+      } else {
+        alert('Please select an answer.');
+      }
+    }
+  </script>
+</body>
+</html>
